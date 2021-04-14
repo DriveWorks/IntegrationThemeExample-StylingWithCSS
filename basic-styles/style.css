@@ -1,0 +1,84 @@
+/* 
+
+  STYLING WITH CSS & DRIVEWORKS METADATA
+  --------------
+
+  These examples demonstrate how to use the "Metadata" property in DriveWorks to target one or more Controls.
+  They also demonstrate some new styling opportunities made possible by CSS customization.
+
+  IMPORTANT NOTE: CSS styles should be seen as a 'progressive enhancement'.
+  Your Forms should function fully without these additional styles, as they may not be loaded in all environments.
+
+  For more detailed information on these selectors, see: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+
+*/
+
+/*
+  EXACT MATCH (=)
+  Target a Control with the metadata property EXACTLY "styled-button" (no other characters)
+ */
+[data-metadata="styled-button"] {
+  border-radius: 100em;
+}
+
+/* 
+  CONTAINS (*=)
+  Target a Control with the metadata property containing "style" (partial match)
+ */
+[data-metadata*="style"] {
+  box-shadow: 0 10px 10px rgba(0,0,0,.25);
+}
+
+/*
+  EXACT WORD (~=)
+  Target a Control with the metadata property containing exactly "scale", but not matching "grayscale" (words are separated by a space)
+*/
+[data-metadata~="scale"] {
+  transform: scale(1.5);
+}
+
+/*
+  STARTS WITH (^=)
+  Target a Control with the metadata property starting with "styled"
+*/
+[data-metadata^="styled"] {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+/*
+  ENDS WITH ($=)
+  Target a Control with the metadata property ending with "button"
+*/
+[data-metadata$="button"] {
+  filter: saturate(2);
+}
+
+/*
+  ON HOVER (:hover)
+  Apply a style when "styled-button" is hovered over (or tapped on touch screens)
+*/
+[data-metadata="styled-button"]:hover {
+  transform: rotate(-5deg) scale(1.2);
+  box-shadow: none;
+}
+
+/*
+  STYLE CHILD ELEMENTS
+  Style any child elements inside of the Control
+  Tip: use the "Inspect Element" feature of your browser's developer tools to locate a unique identifier for the element you wish to style
+
+  Note: the use of !important allows the default inline style to be overwritten - and should be used carefully.
+  For more information, see: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#The_!important_exception
+*/
+
+/* Target an element with a data-id containing "CaptionElement" - found anywhere inside the styled button */
+[data-metadata="styled-button"] [data-id*="CaptionElement"] {
+  color: white !important;
+}
+
+/* Target a <button> as a direct child of the Control (one-level deep) */
+[data-metadata="styled-button"] > button {
+  background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%) !important;
+  border: none !important;
+  cursor: pointer !important;
+}
