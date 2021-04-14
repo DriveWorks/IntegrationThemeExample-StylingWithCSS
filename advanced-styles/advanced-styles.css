@@ -1,0 +1,133 @@
+/* 
+
+  Example Styles
+  --------------
+
+  This example demonstrates further styling opportunities when using the "Metadata" property in DriveWorks.
+  These styles can be combined, tweaked and removed - this aims only to provide inspiration.
+
+  IMPORTANT NOTE: CSS styles should be seen as a 'progressive enhancement'.
+  Your Forms should function fully without these additional styles, as they may not be loaded in all environments the Integration is accessed.
+
+  For more detailed information on these selectors, see: https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors
+
+  ## Note: the use of !important allows the default inline styles to be overwritten (style="...") - and should be used carefully.
+  For more information, see: https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity#The_!important_exception
+
+*/
+
+/* Set re-usable colours - update in one central location, apply to many rules */
+:root {
+  --color-brand-primary: #4299e1;
+  --color-brand-secondary: #48bb78;
+}
+
+/* Global button default style */
+[data-metadata*="button"] button {
+  background: none !important; /* ## See note above when using !important */
+  border: none !important;
+  cursor: pointer !important;
+}
+
+/* Background color */
+[data-metadata*="button"] {
+  background-color: var(--color-brand-primary);
+}
+
+/* Text color */
+[data-metadata*="button"] [data-id*="CaptionElement"] {
+  color: #fff !important;
+}
+
+/* Rounded Button */
+[data-metadata*="rounded"] {
+  border-radius: 5px;
+}
+
+/* 'Pill' Button */
+[data-metadata*="pill"] {
+  border-radius: 100em;
+}
+
+/* Inactive Button */
+[data-metadata*="inactive"] {
+  opacity: 50% !important;
+}
+[data-metadata*="inactive"] button {
+  cursor: not-allowed !important;
+}
+
+/* Change color on hover, with ease */
+[data-metadata*="hover-green"]:hover {
+  background-color: var(--color-brand-secondary);
+}
+
+/* Lighten on hover */
+[data-metadata*="hover-light"]:hover {
+  filter: brightness(115%);
+}
+
+/* Darken on hover */
+[data-metadata*="hover-dark"]:hover {
+  filter: brightness(85%);
+}
+
+/* Circle */
+[data-metadata*="circle"] {
+  border-radius: 50%;
+}
+
+/* Border Styles */
+[data-metadata*="border-dashed"] {
+  border: 1px dashed #aaa !important;
+}
+
+/* Drop Shadow */
+[data-metadata*="shadow"] {
+  box-shadow: 0 2px 10px rgba(0,0,0,.5);
+}
+
+/* Background Gradient */
+[data-metadata*="gradient"] {
+  background: linear-gradient(45deg, #833ab4 0%, #4299e1 100%);
+}
+
+/* Custom Shape (clip-path) */
+[data-metadata*="shaped"] {
+  clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+}
+
+/* Blur */
+[data-metadata*="blur"] {
+  filter: blur(3px);
+}
+
+/* Rotate */
+[data-metadata*="rotate"] {
+  transform: rotate(10deg);
+}
+
+/* Scale */
+[data-metadata~="scale"] {
+  transform: scale(0.5);
+}
+
+/* Skew */
+[data-metadata*="skew"] {
+  transform: skewX(-15deg);
+}
+
+/* Grayscale */
+[data-metadata*="grayscale"] {
+  filter: grayscale(1);
+}
+
+/* Animate background color */
+[data-metadata*="animate-background"] {
+  transition: background-color .5s ease;
+}
+
+/* Animate position */
+[data-metadata*="animate-position"] {
+  transition: left .5s ease;
+}
