@@ -4,8 +4,12 @@
 
 A distributable example that demonstrates how to style DriveWorks controls using CSS.
 
+---
+
 Please note: DriveWorks are not accepting pull requests for this example.  
 Join our [online community](https://my.driveworks.co.uk) for discussion, resources and to suggest other examples.
+
+---
 
 ### This example:
 - Demonstrates using basic metadata & CSS selectors, and further advanced styling that CSS enables.
@@ -69,11 +73,14 @@ The CSS selectors/styles demonstrated can be viewed without installing the provi
     * `projectName` - The name of the Project to render a Specification from.
         * These are pre-filled with supplied Project names, but can be changed if required.
 
-7. Open the example HTML files locally (localhost) or on a remote server.
+7. Ensure that the Integration Theme server is running, using any of the available methods (e.g. Personal Web Edition, DriveWorks Live, IIS)
+    * For more information, see [Selecting the Integration Theme](https://docs.driveworkspro.com/Topic/IntegrationThemeSelect).
+
+8. Open the example HTML files locally (localhost) or on a remote server.
     * Ensure `<corsOrigins>` in DriveWorksConfigUser.xml permits request from this location.
     See [Integration Theme Settings](https://docs.driveworkspro.com/Topic/IntegrationThemeSettings) for additional guidance.
 
-8. If encountering any issues, check the browser's console for error messages (F12)
+9. If encountering any issues, check the browser's console for error messages (F12)
 
 ### Potential Issues:
 * When serving this example for a domain different to your DriveWorks Live server, e.g. api.my-site.com from company.com, 'SameSite' cookie warnings may be thrown when the Client SDK attempts to store the current session id.
@@ -85,6 +92,6 @@ The CSS selectors/styles demonstrated can be viewed without installing the provi
 ---
 
 This source code has been made available to demonstrate how you can integrate with DriveWorks using the DriveWorks Live API.
-This code is provided under the MIT license, for more details see LICENSE.md.
+This code is provided under the MIT license. For more details, see the included LICENSE file.
 
 The example requires that you have the latest DriveWorks Live SDK installed, operational and remotely accessible.
