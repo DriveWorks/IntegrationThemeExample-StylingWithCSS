@@ -1,6 +1,6 @@
-# Integration Theme Example:  Styling with CSS
+# Integration Theme Example: Styling with CSS
 ### Version: 1.0.0
-#### Minimum DriveWorks Version: 18.0
+#### DriveWorks Versions: 18.0 - 20.3
 
 A distributable example that demonstrates how to style DriveWorks controls using CSS.
 
