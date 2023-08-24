@@ -2,7 +2,7 @@
 ### Version: 1.0.1
 #### DriveWorks Versions: 18.0 - 20.3
 
-A distributable example that demonstrates how to style DriveWorks controls using external CSS.
+A distributable example that demonstrates how to style DriveWorks Controls using external CSS.
 
 ---
 
