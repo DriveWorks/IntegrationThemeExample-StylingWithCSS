@@ -1,5 +1,5 @@
 # Integration Theme Example: Styling with external CSS
-### Version: 1.0.0
+### Version: 1.0.1
 #### DriveWorks Versions: 18.0 - 20.3
 
 A distributable example that demonstrates how to style DriveWorks controls using external CSS.
@@ -15,7 +15,7 @@ Join our [online community](https://my.driveworks.co.uk) for discussion, resourc
 - Demonstrates using basic Metadata & CSS selectors, and further advanced styling that CSS enables.
 - Provides 2 DriveWorks Packages (`.drivepkg`), each containing an example Project that demonstrate use of the "Metadata" Property and styling various Properties.
     - `BasicStyles18.drivepkg` - Demonstrates using "Metadata" & basic CSS selectors to target DriveWorks Controls.
-      - See also: `/basic-styles/style.css`
+      - See also: `/basic-styles/styles.css`
     - `AdvancedStyles18.drivepkg` - Demonstrates some possibilities for advanced styling made available via CSS.
       - See also: `/advanced-styles/advanced-styles.css`
 
@@ -26,7 +26,7 @@ The CSS selectors/styles demonstrated can be viewed without installing the provi
 ![Basic Example](/images/basic.png)
 
 - Creates a new Specification
-- Loads in a custom stylesheet (`/basic-styles/style.css`)
+- Loads in a custom stylesheet (`/basic-styles/styles.css`)
 - Styles a single Macro Button control - using the Project 'BasicStyles18'
 - Demonstrates:
     - Targeting controls with the "Metadata" Property (`data-metadata`)
