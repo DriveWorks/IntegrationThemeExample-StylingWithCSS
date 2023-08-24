@@ -54,7 +54,7 @@ The CSS selectors/styles demonstrated can be viewed without installing the provi
         - Position (`top`/`left`)
 
 ### To use:
-1. Clone this repository, or download as a `.zip`,
+1. Clone this repository, or download as a `.zip`.
 
 2. Extract each of the supplied `.drivepkg` files using the DriveWorks Package Wizard to access the included Project files.
 
