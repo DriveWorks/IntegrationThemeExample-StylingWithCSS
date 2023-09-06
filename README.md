@@ -2,6 +2,8 @@
 ### Version: 1.0.1
 #### DriveWorks Versions: 18.0 - 20.3
 
+> For styling via CSS in DriveWorks 21.0 and above, see: [Styling with ProjectStyles.css](https://github.com/DriveWorks/Example-StylingWithProjectStylesCSS)
+
 A distributable example that demonstrates how to style DriveWorks Controls using external CSS.
 
 ---
